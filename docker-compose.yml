@@ -1,0 +1,7 @@
+version: '2'
+services:
+  dotfiles:
+    image: ruby:2.3.1
+    volumes:
+      - '.:/dotfiles'
+    working_dir: /dotfiles

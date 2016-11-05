@@ -1,0 +1,9 @@
+Host *
+    ForwardAgent yes
+    SendEnv LANG LC_*
+    HashKnownHosts yes
+    GSSAPIAuthentication yes
+    GSSAPIDelegateCredentials no
+
+Host *.tmate.io
+    ForwardAgent no

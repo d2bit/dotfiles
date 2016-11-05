@@ -1,0 +1,85 @@
+# React
+snippet imr "React import" w
+import React${2:, { ${3:Component, }PropTypes }} from 'react'$0
+endsnippet
+
+snippet com "React component" w
+class $1 extends React.Component {
+	render() {
+		return (
+			<${2:div}>
+				$0
+			</$2>
+		)
+	}
+}
+
+export default $1
+endsnippet
+
+snippet scom "React stateless component" w
+const $1 = ($2) => (
+	$0
+)
+
+export default $1
+endsnippet
+
+snippet red "Reducer definition" w
+export default (state = ${1:{}}, ${2:action}) => {
+	switch(action.type) {
+		default:
+			return state
+	}
+}$0
+endsnippet
+
+snippet exc "Redux Action Type Constant" w
+export const ${1:CONSTANT_NAME} = '$1'$0
+endsnippet
+
+snippet pro "React Prop Types" w
+const { $1 } = PropTypes
+
+$2.propTypes = {
+	$3: $1$0
+}
+endsnippet
+
+snippet bind "Bind function to this in constructor" w
+this.$1 = this.$1.bind(this)$0
+endsnippet
+
+# mocha
+snippet des "Describe block" w
+describe('$1', () => {
+	$0
+})
+endsnippet
+
+snippet it "It block" w
+it('$1', () => {
+	$0
+})
+endsnippet
+
+snippet bef "Before block" w
+beforeEach(() => {
+	$0
+})
+endsnippet
+
+snippet exp "Expect block" w
+expect(
+	$1
+).to.$2(${3:expected${1/\w+\s*/\u$0/g}})$0
+endsnippet
+
+snippet expi "Expect inline block" w
+expect($1.to.$2(${3:expected${1/\w+\s*/\u$0/g}})$0
+endsnippet
+
+# Javascript
+snippet wtf "What The Fuck" w
+console.debug('$1:', $1)$0
+endsnippet
