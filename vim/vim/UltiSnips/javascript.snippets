@@ -50,6 +50,16 @@ snippet bind "Bind function to this in constructor" w
 this.$1 = this.$1.bind(this)$0
 endsnippet
 
+snippet ss "setState" b
+this.setState({ $1: $2 })$0
+endsnippet
+
+snippet ssc "setState with callback" b
+this.setState((prevState, props) => {
+	return { $1: $2 }
+}${3:, ${4:${5:this.}${6:callback}}})$0
+endsnippet
+
 # mocha
 snippet des "Describe block" w
 describe('$1', () => {
@@ -76,7 +86,7 @@ expect(
 endsnippet
 
 snippet expi "Expect inline block" w
-expect($1.to.$2(${3:expected${1/\w+\s*/\u$0/g}})$0
+expect($1).to.equal(${3:expected${1/\w+\s*/\u$0/g}})$0
 endsnippet
 
 # Javascript
