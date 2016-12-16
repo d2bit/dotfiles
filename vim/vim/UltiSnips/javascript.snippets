@@ -4,7 +4,7 @@ import React${2:, { ${3:Component, }PropTypes }} from 'react'$0
 endsnippet
 
 snippet com "React component" w
-class $1 extends React.Component {
+class $1 extends Component {
 	render() {
 		return (
 			<${2:div}>
@@ -36,6 +36,12 @@ endsnippet
 
 snippet exc "Redux Action Type Constant" w
 export const ${1:CONSTANT_NAME} = '$1'$0
+endsnippet
+
+snippet imex "Import Export" w
+import const $1 from './$1'
+
+export $1
 endsnippet
 
 snippet pro "React Prop Types" w
@@ -91,5 +97,5 @@ endsnippet
 
 # Javascript
 snippet wtf "What The Fuck" w
-console.debug('$1:', $1)$0
+console.log('$1 ->', $1)$0
 endsnippet
