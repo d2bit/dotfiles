@@ -39,6 +39,8 @@ Plug 'moll/vim-bbye' " Delete buffers and close files in Vim without closing you
 Plug 'AndrewRadev/splitjoin.vim' " simplifies the transition between multiline and single-line code
 " Plug 'edkolev/tmuxline.vim' " Simple tmux statusline generator
 
+Plug 'elixir-lang/vim-elixir'
+
 Plug 'fatih/vim-go', { 'for': 'go' } " Go development
 
 Plug 'plasticboy/vim-markdown' " Markdown Vim Mode
